@@ -1,3 +1,14 @@
-<p>
-users works!
-</p>
+<h2>List of Existing Users</h2>
+
+<div *ngFor="let user of users">
+
+
+
+
+</div>
+<button (click)="edit()">
+    EDIT
+</button>
+<button (delete)="delete()">
+    DELETE
+</button>
