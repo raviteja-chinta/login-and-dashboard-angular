@@ -1,12 +1,11 @@
-<div style="text-align:center">
-  <h1>
-    Welcome {{user.firstName}} {{user.lastName}}!
-  </h1>
-  <p>
-    <button (click)="logout()">
+<div class="container">
+	<header>
+		<div id="logout"> <button (click)="logout()">
       Logout
-    </button>
-  </p>
-  
+    </button></div>
+		<div id="welcome">Welcome {{user.firstName}} {{user.lastName}}</div>
+	</header>
+  <div id="manageUsers">
+  <button (click) ="manageUsers()"> Manage Users </button>
+  </div>
 </div>
-

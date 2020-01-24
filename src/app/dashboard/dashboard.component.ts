@@ -25,4 +25,8 @@ export class DashboardComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
+  manageUsers() {
+    this.router.navigateByUrl('/users');
+  }
+
 }

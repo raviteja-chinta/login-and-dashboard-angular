@@ -1,6 +1,38 @@
+.container {
+	border-top: 3px solid #ea8922;
+  font-family: verdana;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+}
+
+header {
+	padding-top: 10px;
+	height: 76px;
+	width: 100%;
+}
+
+#logout {
+	float: right;
+	padding-right: 2%;
+	padding-left: 3.5%;
+	font-size: 15px;
+  border-left: 1px solid #bdc3c7;
+}
+
+#welcome {
+	font-size: 15px;
+	padding-right: 5%;
+	float: right;
+	text-align: right;
+}
+
 button{
-    background: rgb(1, 29, 51);
-    border-color: transparent;
-    color: #fff;
-    cursor: pointer;
+  background: rgb(1, 29, 51);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+#manageUsers {
+  padding-left: 45%;
 }
