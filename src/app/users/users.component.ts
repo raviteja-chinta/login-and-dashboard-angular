@@ -10,12 +10,22 @@ import  *  as  users  from  '../userinfo.json';
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })
+
+
 export class UsersComponent implements OnInit {
-  user = users.users[];
-  console.log(user);
+//   const HEROES = [
+//     {name:'Superman'},
+//     {name:'Batman'},
+//     {name:'BatGirl'},
+//     {name:'Robin'},
+//     {name:'Flash'}
+// ];
+//   heroes = this.HEROES;
+  const USERS = users.users;
+  users = this.USERS
 
   constructor(private router: Router) {
-    this.users  = user; 
+    
    }
 
   ngOnInit() {

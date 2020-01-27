@@ -1,19 +1,22 @@
 <h2>List of Existing Users</h2>
 
-<!-- <div *ngFor="let user of users">
-<ul>
-<li *ngFor=*ngFor="let user of users">
-    <h2>{{user.name}} / ${{product.price}}</h2>
-    <p> {{product.description}} </p>
-</li>
-</ul> -->
+<table>
+	<thead>
+		
+		<th>Index</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th> Edit </th>
+    <th> Delete </th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let user of users; let i = index;">
+			<td>{{i+1}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.email}}</td>
+      <td> <button (click)="edit()"> Edit </button> </td>
+      <td> <button (click)="edit()"> Delete </button> </td>
+		</tr>
+	</tbody>
+</table>
 
-
-
-<!-- </div> -->
-<button (click)="edit()">
-    EDIT
-</button>
-<button (delete)="delete()">
-    DELETE
-</button>
