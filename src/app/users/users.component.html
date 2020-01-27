@@ -1,22 +1,36 @@
-<h2>List of Existing Users</h2>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-<table>
-	<thead>
-		
-		<th>Index</th>
-    <th>Name</th>
-    <th>Email</th>
-    <th> Edit </th>
-    <th> Delete </th>
-	</thead>
-	<tbody>
-		<tr *ngFor="let user of users; let i = index;">
-			<td>{{i+1}}</td>
-      <td>{{user.firstName}}</td>
-      <td>{{user.email}}</td>
-      <td> <button (click)="edit()"> Edit </button> </td>
-      <td> <button (click)="edit()"> Delete </button> </td>
-		</tr>
-	</tbody>
-</table>
+<section>
+	<h1>List of Existing Users</h1>
+	<div class="tbl-header">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr>
+					<th>Index</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>DOB</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="tbl-content">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				<tr *ngFor="let user of users; let i = index;">
+					<td>{{i+1}}</td>
+					<td>{{user.firstName}}</td>
+					<td>{{user.lastName}}</td>
+					<td>{{user.email}}</td>
+					<td>{{user.DOB}}</td>
+					<td> <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+						<a class="delete" title="Delete"
+							data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a></td>
 
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>

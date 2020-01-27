@@ -13,14 +13,6 @@ import  *  as  users  from  '../userinfo.json';
 
 
 export class UsersComponent implements OnInit {
-//   const HEROES = [
-//     {name:'Superman'},
-//     {name:'Batman'},
-//     {name:'BatGirl'},
-//     {name:'Robin'},
-//     {name:'Flash'}
-// ];
-//   heroes = this.HEROES;
   const USERS = users.users;
   users = this.USERS
 
