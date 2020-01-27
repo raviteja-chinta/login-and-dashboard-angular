@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 
-import  *  as  user  from  '../admin.json';
+import  *  as  admin  from  '../admin.json';
 
 
 @Component({
@@ -14,7 +14,7 @@ export class DashboardComponent implements OnInit {
   firstname: string;
   lastname: string;
   constructor(private authService: AuthService, private router: Router) {
-    this.user = user; 
+    this.admin  = admin; 
   }
   
   ngOnInit() {
